@@ -1,0 +1,36 @@
+name: Bug
+description: A crash, a hang, something that looks wrong or is slow
+labels: [bug]
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      placeholder: Boox Go Color 7 Gen II, Android 13
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Ligero version
+      placeholder: "1.6"
+    validations:
+      required: true
+  - type: dropdown
+    id: pdf
+    attributes:
+      label: Kind of PDF
+      options:
+        - Scanned book
+        - Digital PDF (text)
+        - Plan, map or drawing
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens
+      description: What you were doing, what you expected and what happened. A photo of the screen helps a lot.
+    validations:
+      required: true
