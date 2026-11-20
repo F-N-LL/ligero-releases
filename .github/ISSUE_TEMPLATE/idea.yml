@@ -1,0 +1,14 @@
+name: Idea / Feature request
+description: Algo que echas en falta
+labels: [idea]
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Dispositivo / Device
+  - type: textarea
+    id: idea
+    attributes:
+      label: Qué te gustaría / What you'd like
+    validations:
+      required: true

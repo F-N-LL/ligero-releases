@@ -1,0 +1,36 @@
+name: Algo falla / Bug
+description: Un cierre, un bloqueo, algo que se ve mal o va lento
+labels: [fallo]
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Dispositivo / Device
+      placeholder: Boox Go Color 7 Gen II, Android 13
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión de Ligero / Ligero version
+      placeholder: "1.6"
+    validations:
+      required: true
+  - type: dropdown
+    id: pdf
+    attributes:
+      label: Tipo de PDF / Kind of PDF
+      options:
+        - Libro escaneado / Scanned book
+        - PDF digital (texto) / Digital PDF (text)
+        - Plano, mapa o dibujo / Plan, map or drawing
+        - Otro / Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Qué pasa / What happens
+      description: Qué hacías, qué esperabas y qué ocurrió. Una foto de la pantalla ayuda mucho.
+    validations:
+      required: true
