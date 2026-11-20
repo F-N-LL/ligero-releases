@@ -1,48 +1,36 @@
 # Ligero
 
-Lector de PDF rápido y ligero para dispositivos Android de tinta electrónica, hecho para el **Boox Go Color 7 (Gen II)**. Aquí solo se publican las versiones para probar; el código no es público.
+A fast, lightweight PDF reader for e-ink Android devices, built for the **Boox Go Color 7 (Gen II)**. This repository only hosts test builds; the source code is not public.
 
-*A fast, lightweight PDF reader for e-ink Android devices, built for the Boox Go Color 7 (Gen II). This repository only hosts test builds. English below.*
+## What it does
 
-## Qué hace
+- **Plans, maps and drawings:** pinch to zoom, drag to pan and double-tap the center, like any PDF reader. When you let go, only the visible area is redrawn sharp.
+- **Scanned books:** splits double-page spreads, trims margins and straightens pages.
+- **Reflow mode:** lays out a scanned page again with larger text, without OCR and without text errors.
+- **Convert to EPUB** with on-device text recognition.
+- **Automatic e-ink refresh on Boox:** fast while moving and flipping through pages, clean when you let go.
 
-- **Planos, mapas y dibujos:** pellizcar para ampliar, arrastrar y doble toque en el centro, como en cualquier lector de PDF. Al soltar, solo la zona visible se dibuja nítida.
-- **Libros escaneados:** separa las dobles páginas, recorta márgenes y endereza.
-- **Modo reflow:** vuelve a maquetar la página escaneada con la letra más grande, sin OCR y sin errores de texto.
-- **Convertir a EPUB** con reconocimiento de texto en el propio dispositivo.
-- **Refresco e-ink automático en los Boox:** rápido al mover y hojear, limpio al soltar.
+Compared with NeoReader, the reader that comes with the Boox, using the same AutoCAD plans on the same device, Ligero opens the PDF about 3× faster, turns pages about 2.7× faster and uses 3–5× less memory.
 
-Comparado con NeoReader, el lector de serie, con los mismos planos de AutoCAD y en el mismo Boox, Ligero abre el PDF unas 3 veces más rápido, pasa página unas 2,7 veces más rápido y gasta entre 3 y 5 veces menos memoria.
+## Install
 
-## Instalar
+1. On the device, open the [latest release](../../releases/latest) and download `Ligero-x.y.apk`.
+2. Open it. If Android asks, allow installing apps from that source.
 
-1. Abre la [última versión](../../releases/latest) desde el Boox y descarga `Ligero-x.y.apk`.
-2. Ábrelo. Si Android lo pide, permite instalar apps de ese origen.
+Requirements: Android 10 or later and a 64-bit ARM processor (every recent Boox). It is tested on the Go Color 7 Gen II; how it does on other devices is exactly what we want to find out.
 
-Requisitos: Android 10 o posterior y procesador ARM de 64 bits (todos los Boox recientes). Está probado en el Go Color 7 Gen II; en los demás dispositivos es justo lo que queremos averiguar.
+### Get updates automatically
 
-### Recibir las actualizaciones solo
-
-Instala [Obtainium](https://github.com/ImranR98/Obtainium), pulsa **Añadir app** y pega:
+Install [Obtainium](https://github.com/ImranR98/Obtainium), tap **Add app** and paste:
 
 ```
 https://github.com/F-N-LL/ligero-releases
 ```
 
-Te avisará de cada versión nueva y la instalará encima, conservando tus libros y posiciones.
+It will tell you about each new version and install it over the old one, keeping your books and reading positions.
 
-## Contar qué tal va
+## Feedback
 
-Abre un [issue](../../issues/new/choose): hay una plantilla para fallos y otra para ideas. Lo más útil es saber **el modelo del dispositivo y qué tipo de PDF** (escaneado, digital, plano...). Si el fallo es con un archivo concreto y puedes compartirlo, mejor aún.
+[Open an issue](../../issues/new/choose): there is a template for bugs and one for ideas. The most useful details are **your device model and the kind of PDF** (scanned, digital, plan...). If the problem happens with a specific file you can share, even better.
 
----
-
-## English
-
-**Install:** open the [latest release](../../releases/latest) on the device, download `Ligero-x.y.apk` and open it (allow installs from that source if asked). Android 10+, 64-bit ARM. Tested on the Boox Go Color 7 Gen II.
-
-**Updates:** in [Obtainium](https://github.com/ImranR98/Obtainium), add `https://github.com/F-N-LL/ligero-releases`.
-
-**Feedback:** [open an issue](../../issues/new/choose) with your device model and the kind of PDF.
-
-The app's interface is in Spanish and English.
+The app's interface is in English and Spanish.
