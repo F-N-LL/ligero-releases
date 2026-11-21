@@ -14,10 +14,14 @@ Compared with NeoReader, the reader that comes with the Boox, using the same Aut
 
 ## Install
 
-1. On the device, open the [latest release](../../releases/latest) and download `Ligero-x.y.apk`.
+1. On the device, open the [latest release](../../releases/latest) and download the APK for your device:
+   - `Ligero-x.y.apk`: 64-bit Android on ARM, which is every recent Boox. If in doubt, start with this one.
+   - `Ligero-x.y-32bit.apk`: devices that run a **32-bit Android**, even on a 64-bit processor, such as the Meebook Q78. On those the 64-bit APK does not install ("App not installed" or "not compatible").
 2. Open it. If Android asks, allow installing apps from that source.
 
-Requirements: Android 10 or later and a 64-bit ARM processor (every recent Boox). It is tested on the Go Color 7 Gen II; how it does on other devices is exactly what we want to find out.
+Requirements: Android 10 or later on an ARM processor. It is tested on the Go Color 7 Gen II; how it does on other devices is exactly what we want to find out.
+
+Not sure which Android you have? An app like *CPU-Z* or *Device Info HW* shows it: if the supported ABIs (or "instruction sets") include `arm64-v8a`, use `Ligero-x.y.apk`; if they list only `armeabi-v7a`, use the 32-bit one.
 
 ### Get updates automatically
 
@@ -28,6 +32,8 @@ https://github.com/F-N-LL/ligero-releases
 ```
 
 It will tell you about each new version and install it over the old one, keeping your books and reading positions.
+
+On a 32-bit device, before saving the app in Obtainium, set **Filter APKs by regular expression** to `32bit` so it always picks the right file. On 64-bit devices, if Obtainium asks which APK to install, choose the one without `32bit`.
 
 ## Feedback
 
