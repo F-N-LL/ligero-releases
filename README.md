@@ -2,6 +2,15 @@
 
 A fast, lightweight PDF reader for e-ink Android devices, built for the **Boox Go Color 7 (Gen II)**. This repository only hosts test builds; the source code is not public.
 
+## At a glance
+
+```mermaid
+flowchart TD
+  SRC["Ligero source<br/>private repo"] -->|"tools/release.sh"| REL["Releases here<br/>APK 64-bit and 32-bit"]
+  REL --> DEV["Your Boox or<br/>e-ink Android"]
+  DEV -->|"feedback"| ISS["Issues"]
+```
+
 ## What it does
 
 - **Plans, maps and drawings:** pinch to zoom, drag to pan and double-tap the center, like any PDF reader. When you let go, only the visible area is redrawn sharp.
